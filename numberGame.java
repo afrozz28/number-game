@@ -10,17 +10,16 @@ public class numberGame {
         int maxAttempt = 8;
         int score = 0;
         boolean playAgain = false, guessCorrectly;
-
         int attempts;
 
         System.out.println("🎮 Welcome to the Number Guessing Game!\n");
-
         System.out.println("Guess the number from " + min + " to " + max);
         System.out.println("You have " + maxAttempt + " attempts.\n");
         do {
             guessCorrectly = false;
             attempts= 0;
             int randomNum = rand.nextInt(max - min + 1) + min;
+            System.out.println("----------------------------Let's play!---------------------------------");
 
             while (attempts < maxAttempt) {
                 attempts++;
