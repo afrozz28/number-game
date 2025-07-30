@@ -24,7 +24,7 @@ public class numberGame {
             while (attempts < maxAttempt) {
                 attempts++;
                 System.out.println();
-                System.out.print(attempts + ".Enter a number: ");
+                System.out.print(attempts + ".Guess the number: ");
                 int num = sc.nextInt();
                 if (num > randomNum) {
                     System.out.println("Number to high " + num + "\n");
@@ -40,7 +40,7 @@ public class numberGame {
 
             }
             if (!guessCorrectly) {
-                System.out.println( "You've used all attempts you failled to guess the number. The number was: " + randomNum);
+                System.out.println( "You've used all attempts you failed to guess the number. The number was: " + randomNum);
             }
             System.out.print("Do you want to play again? (yes/no): ");
             String res = sc.next().toLowerCase();
